@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-H66+oAeZAe5QvqQTpGUh8SJ4nfr/T8Z5tg3JvaCBbz4Tyj2SmXQ7ZpWBf5S/ZDEI" crossorigin="anonymous">
+
+  <title>Simple Online Store</title>    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary pt-0">
+        <div id="navbar" class="container-fluid">
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="./cart.html">
+                  <button type="button" class="btn bg-success">
+                    <i class="fa-regular fa-cart-shopping"></i> Go To Cart
+                  </button>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle ps-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu ps-4">
+                  <li><a class="dropdown-item" href="#">Groceries</a></li>
+                  <li><a class="dropdown-item" href="#">Snacks</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Household items</a></li>
+                </ul>
+              </li>
+              <li class="nav-item ps-4">
+                <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+              </li>
+            </ul>
+            <a id="brandName" class="navbar-brand " href="#">Bismillah Super Store</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <form class="d-flex ps-4" role="search">
+              <input class="form-control me-2 w-500px" type="search" placeholder="Search" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass fa-beat fa-2xl"></i>
+              <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- <div id="header">
+        <h1>Welcome to Bismillah General Store</h1><a href="./cart.html"><button type="button">Go To Cart</button></a>
+        <input type="search" placeholder="Search Grocery items ,Snacks ,Beverages Etc" name="" id=""> -->
+        <!-- <div class="top-bar-items">
+            <input class="selectinput search" type="search" placeholder="Find Cars,Mobile Phones and More..."></i>  
+    </div >
+    </div> -->
+    <div id="carouselExampleAutoplaying" class="carousel slide w-300px pb-40px" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://i.dawn.com/primary/2023/01/63b79a1d7c9c0.png" class="w-500px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.dawn.com/primary/2022/03/623d735300cb5.png" class="w-500px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.dawn.com/large/2022/05/62948b5d5c55e.png" class="w-1/2" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="classified-cards-area">
+
+        <div>
+          <h2>Groceries And Cooking items <button class="groceries pe-2"><a href="./groceries.html">More <i class="fa-solid fa-square-plus"></i></a></button></h2>
+        
+        </div>
+        <div> 
+            <div  class="ad-card-1">
+                <!-- <div>
+                    <img src="mobile.png" alt="" width="300px">
+                </div> -->
+                <div>
+                    <p class="pricing">Buy Now</p>
+                </div>
+                <div class="ad-desc">
+                    <p>Best Quality Pakistani Rice</p>
+                </div>
+                <div class="location">
+                    <p>From 280/kg</p>
+                    <p class="small-txt"></p>
+                </div>
+            </div>
+             
+            <div class="ad-card-2">
+                <!-- <div>
+                    <img src="mobile.png" alt="" width="300px">
+                </div> -->
+                <div>
+                    <p class="pricing">Buy Now</p>
+                </div>
+                <div class="ad-desc">
+                    <p>All variety Pulses & Lentils Daals Available</p>
+                </div>
+                <div class="location">
+                    <p>Daal Moong Rs 350/kg</p><br>
+                    <p>Daal Chana Rs 300/kg</p><br>
+                    <p>Daal Masoor Rs 430/kg</p>
+                    <p class="small-txt"></p>
+                </div>
+            </div>
+             
+            <div class="ad-card-3">
+                <!-- <div>
+                    <img src="mobile.png" alt="" width="300px">
+                </div> -->
+                <div>
+                    <p class="pricing">Buy Now</p>
+                </div>
+                <div class="ad-desc">
+                    <p> Sugar</p>
+                </div>
+                <div class="location">
+                    <p>Refined Sugar 150/kg</p>
+                    <p class="small-txt"></p>
+                </div>
+            </div>
+             
+            <div class="ad-card-4">
+                <!-- <div>
+                    <img src="mobile.png" alt="" width="300px">
+                </div> -->
+                <div>
+                    <p class="pricing">Buy Now</p>
+                </div>
+                <div class="ad-desc">
+                    <p>Best Quality Variety Atta Available</p>
+                </div>
+                <div class="location">
+                    <p></p>
+                    <p class="small-txt"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="classified-cards-area">
+        <h2>Household Items</h2>
+        <div> 
+            <div class="ad-card-5">
+                <!-- <div>
+                    <img src="car.png" alt="" width="300px">
+                </div> -->
+                <div>
+                    <p class="pricing">Buy Now</p>
+                </div>
+                <div class="ad-desc">
+                    <p>Kitchen Essentials</p><br>
+                    <p>Best Price</p>
+                </div>
+                <div class="location">
+                    <p>Utensils,Cooking Oils Available</p>
+                    <p class="small-txt"></p>
+                </div>
+            </div>
+            <div class="ad-card-6">
+                <!-- <div>
+                    <img src="car.png" alt="" width="300px">
+                </div> -->
+                <div>
+                    <p class="pricing">Buy Now</p>
+                </div>
+                <div class="ad-desc">
+                    <p>Toiletries Items</p>
+                </div>
+                <div class="location">
+                    <p>Soaps-Shampoo-Toothpaste-Face Wash <br><br><br> Available</p>
+                    <p class="small-txt"></p>
+                </div>
+            </div>
+            <div class="ad-card-7">
+                <div>
+                    <p class="pricing">Buy Now</p>
+                </div>
+                <div class="ad-desc">
+                    <p>Cleaning Accessories</p>
+                </div>
+                <div class="location">
+                    <p>Scrubs Sponges Brooms <br>Variety <br><br><br>Available</p>
+                    <p class="small-txt"></p>
+                </div>
+            </div>
+            <div class="ad-card-8">
+                <div>
+                    <p class="pricing">Buy Now</p>
+                </div>
+                <div class="ad-desc">
+                    <p>Self-Care Items</p>
+                </div>
+                <div class="location">
+                    <p>Body-Sprays,Lotions,Chapsticks <br><br><br>Available </p>
+                </div>
+            </div> 
+        </div>
+    </div>
+    
+<div class="classified-cards-area">
+  <h2>Snacks</h2>
+  <div> 
+      <div class="ad-card-9">
+          <div>
+              <p class="pricing">Buy Now</p>
+          </div>
+          <div class="ad-desc">
+              <p>Best Brand Chips Available</p>
+          </div>
+          <div class="location">
+              <p>Lays,Slanty,Kurleez</p>
+          </div>
+      </div>
+      <div class="ad-card">
+          <div>
+              <img src="bike.png" alt="" width="300px">
+          </div>
+          <div>
+              <p class="pricing">Rs 435,000<span class="heart-icon"><i class="fa-regular fa-heart"></i></span></p>
+          </div>
+          <div class="ad-desc">
+              <p>Suzuki GSX-125 (2023) For Sale!!!</p>
+          </div>
+          <div class="location">
+              <p>DHA Phase 2 Extension, Karachi</p>
+              <p class="small-txt">3 days ago</p>
+          </div>
+      </div>
+      <div class="ad-card">
+          <div>
+              <img src="bike.png" alt="" width="300px">
+          </div>
+          <div>
+              <p class="pricing">Rs 435,000<span class="heart-icon"><i class="fa-regular fa-heart"></i></span></p>
+          </div>
+          <div class="ad-desc">
+              <p>Suzuki GSX-125 (2023) For Sale!!!</p>
+          </div>
+          <div class="location">
+              <p>DHA Phase 2 Extension, Karachi</p>
+              <p class="small-txt">3 days ago</p>
+          </div>
+      </div>
+      <div class="ad-card">
+          <div>
+              <img src="bike.png" alt="" width="300px">
+          </div>
+          <div>
+              <p class="pricing">Rs 435,000<span class="heart-icon"><i class="fa-regular fa-heart"></i></span></p>
+          </div>
+          <div class="ad-desc">
+              <p>Suzuki GSX-125 (2023) For Sale!!!</p>
+          </div>
+          <div class="location">
+              <p>DHA Phase 2 Extension, Karachi</p>
+              <p class="small-txt">3 days ago</p>
+          </div>
+      </div> 
+  </div>
+
+  <div id="products">
+    <div class="product-card" id="product1">
+        <h3>Product 1</h3>
+        <p>$20.00</p>
+        <button class="add-to-cart-btn" onclick="addToCart('Product 1', 20.00)">Add to Cart</button>
+      </div>
+      <div class="product-card" id="product2">
+        <h3>Product 2</h3>
+        <p>$25.00</p>
+        <button class="add-to-cart-btn" onclick="addToCart('Product 2', 25.00)">Add to Cart</button>
+      </div>
+    </div>
+    <div>
+      <h2>Shopping Cart</h2>
+      <ul id="cart-items"></ul>
+      <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
